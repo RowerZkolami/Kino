@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="c3p0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Documents/hibernate-release-6.0.0.Alpha6/hibernate-release-6.0.0.Alpha6/lib/optional/c3p0/hibernate-c3p0-6.0.0.Alpha6.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Documents/hibernate-release-6.0.0.Alpha6/hibernate-release-6.0.0.Alpha6/lib/optional/c3p0/mchange-commons-java-0.2.19.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../Documents/hibernate-release-6.0.0.Alpha6/hibernate-release-6.0.0.Alpha6/lib/optional/c3p0/c3p0-0.9.5.5.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

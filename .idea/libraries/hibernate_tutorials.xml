@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="hibernate-tutorials">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../Documents/hibernate-release-6.0.0.Alpha6/hibernate-release-6.0.0.Alpha6/documentation/quickstart/html_single/hibernate-tutorials.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
