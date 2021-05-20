@@ -1,9 +1,17 @@
+import javax.persistence.*;
+
+@Entity(name = "Osoba")
+@Table
 public class Osoba {
+@Id
+@GeneratedValue
 public int Id;
 public String Imie;
 public String Nazwisko;
 public int User_id;
 public String Numer_telefonu;
+
+public Osoba(){};
 
     public int getId() {
         return Id;
@@ -44,4 +52,8 @@ public String Numer_telefonu;
     public void setNumer_telefonu(String numer_telefonu) {
         Numer_telefonu = numer_telefonu;
     }
+
+
+
+
 }

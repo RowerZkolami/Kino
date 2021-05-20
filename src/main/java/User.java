@@ -1,3 +1,6 @@
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
+
 public class User {
 public int Id;
 public String Login;
@@ -45,6 +48,12 @@ public int getid() {
     public void setEmail(String email) {
         Email = email;
     }
+
+    @OneToMany(mappedBy = "Bilety", fetch = FetchType.LAZY)
+    private Bilety User_Id = new Bilety();
+
+@OneToMany(mappedBy = "Osoba", fetch = FetchType.LAZY)
+    private Osoba User_id = new Osoba();
 }
 
 

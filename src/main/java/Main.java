@@ -3,7 +3,7 @@ import org.hibernate.SessionFactory;
 
 import javax.security.auth.login.Configuration;
 
-public class main {
+public class Main {
     public static void main(String[] args){
     Session session = null;
 

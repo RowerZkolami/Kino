@@ -1,40 +1,54 @@
+import org.hibernate.mapping.Set;
+
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
+
 public class Bilety {
     public int Id;
-    public int Filmy_id;
-    public int User_id;
-    public int Znizki_id;
+    public int Filmy_Id;
+    public int User_Id;
+    public int Znizki_Id;
 
     public void setId(int id) {
         Id = id;
     }
 
-    public void setFilmy_id(int filmy_id) {
-        Filmy_id = filmy_id;
+    public void setFilmy_Id(int filmy_Id) {
+        Filmy_Id = filmy_Id;
     }
 
-    public void setUser_id(int user_id) {
-        User_id = user_id;
+    public void setUser_Id(int user_Id) {
+        User_Id = user_Id;
     }
 
     public void setZnizki_id(int znizki_id) {
-        Znizki_id = znizki_id;
+        Znizki_Id = znizki_id;
     }
 
     public int getId() {
         return Id;
     }
 
-    public int getFilmy_id() {
-        return Filmy_id;
+    public int getFilmy_Id() {
+        return Filmy_Id;
     }
 
-    public int getUser_id() {
-        return User_id;
+    public int getUser_Id() {
+        return User_Id;
     }
 
     public int getZnizki_id() {
-        return Znizki_id;
+        return Znizki_Id;
     }
+
+
+
+
+
+
+
+
+
 
 
 

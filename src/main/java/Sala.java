@@ -20,7 +20,7 @@ public class Sala {
     }
 
     public void setMiejsce(String miejsce) {
-        Miejsce = miejsce;
+       Miejsce = miejsce;
     }
 
     public int Id;

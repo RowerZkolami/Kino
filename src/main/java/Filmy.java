@@ -1,9 +1,14 @@
+import org.hibernate.mapping.Set;
+
+import javax.persistence.FetchType;
+import javax.persistence.OneToMany;
+
 public class Filmy {
     public int Id;
     public String Nazwa;
     public int Rok_produkcji;
     public String Rezyser;
-    public int Typ_filmu_id;
+    public int Typ_filmu_Id;
     public String Ograniczenie_wiekowe;
     public int getId() {
         return Id;
@@ -21,8 +26,8 @@ public class Filmy {
         return Rezyser;
     }
 
-    public int getTyp_filmu_id() {
-        return Typ_filmu_id;
+    public int getTyp_filmu_Id() {
+        return Typ_filmu_Id;
     }
 
     public String getOgraniczenie_wiekowe() {
@@ -45,11 +50,14 @@ public class Filmy {
         Rezyser = rezyser;
     }
 
-    public void setTyp_filmu_id(int typ_filmu_id) {
-        Typ_filmu_id = typ_filmu_id;
+    public void setTyp_filmu_Id(int typ_filmu_Id) {
+        Typ_filmu_Id = typ_filmu_Id;
     }
 
     public void setOgraniczenie_wiekowe(String ograniczenie_wiekowe) {
         Ograniczenie_wiekowe = ograniczenie_wiekowe;
     }
+
+    @OneToMany(mappedBy = "Bilety", fetch = FetchType.LAZY)
+    private Bilety Filmy_Id = new Bilety();
 }
