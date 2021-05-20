@@ -1,12 +1,18 @@
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
+@Entity(name="User")
+@Table
 public class User {
+    @Id @GeneratedValue
 public int Id;
 public String Login;
 public String Haslo;
 public int Role_id;
 public String Email;
+public User () {
+
+};
+
 
 
 public int getid() {

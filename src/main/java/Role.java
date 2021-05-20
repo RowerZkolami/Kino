@@ -5,13 +5,17 @@ import javax.persistence.*;
 import javax.persistence.FetchType;
 import javax.persistence.OneToMany;
 import javax.persistence.*;
-
-
+@Entity(name="Role")
+@Table
 public class Role {
+    @Id
+    @GeneratedValue
     public int Id;
     public String Nazwa;
 
+public Role(){
 
+};
     public int getId() {
         return Id;
     }

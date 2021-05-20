@@ -1,7 +1,20 @@
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
+@Entity(name="Typ_filmu")
+@Table
 public class Typ_filmu {
+
+    @Id @GeneratedValue
+    public int Id;
+    public String Nazwa;
+
+    public Typ_filmu (){
+
+    };
+
+    public void setNazwa(String nazwa) {
+        Nazwa = nazwa;
+    }
     public int getId() {
         return Id;
     }
@@ -13,13 +26,6 @@ public class Typ_filmu {
     public String getNazwa() {
         return Nazwa;
     }
-
-    public void setNazwa(String nazwa) {
-        Nazwa = nazwa;
-    }
-
-    public int Id;
-    public String Nazwa;
 
 
 

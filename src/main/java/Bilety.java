@@ -1,13 +1,19 @@
 import org.hibernate.mapping.Set;
 
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
+@Entity(name="Bilety")
+@Table
 public class Bilety {
+    @Id @GeneratedValue
     public int Id;
     public int Filmy_Id;
     public int User_Id;
     public int Znizki_Id;
+
+    public Bilety(){
+
+    };
 
     public void setId(int id) {
         Id = id;

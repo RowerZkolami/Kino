@@ -1,4 +1,21 @@
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity(name="Sala")
+@Table
+
 public class Sala {
+    @Id
+    @GeneratedValue
+    public int Id;
+    public String Rzad;
+    public String Miejsce;
+
+    public Sala (){
+
+    }
     public int getId() {
         return Id;
     }
@@ -23,7 +40,4 @@ public class Sala {
        Miejsce = miejsce;
     }
 
-    public int Id;
-    public String Rzad;
-    public String Miejsce;
 }

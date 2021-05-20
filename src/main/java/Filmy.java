@@ -1,15 +1,22 @@
 import org.hibernate.mapping.Set;
 
-import javax.persistence.FetchType;
-import javax.persistence.OneToMany;
+import javax.persistence.*;
 
+@Entity(name="Filmy")
+@Table
 public class Filmy {
+    @Id @GeneratedValue
     public int Id;
     public String Nazwa;
     public int Rok_produkcji;
     public String Rezyser;
     public int Typ_filmu_Id;
     public String Ograniczenie_wiekowe;
+
+    public Filmy(){
+
+    };
+
     public int getId() {
         return Id;
     }

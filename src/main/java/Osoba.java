@@ -11,7 +11,9 @@ public String Nazwisko;
 public int User_id;
 public String Numer_telefonu;
 
-public Osoba(){};
+public Osoba(){
+
+};
 
     public int getId() {
         return Id;
